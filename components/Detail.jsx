@@ -36,20 +36,14 @@ const Detail = () => {
         <div className="space-y-2">
           <h4 className="text-lg font-semibold">Related posts</h4>
           <ul className="ml-4 space-y-1 list-disc">
-            <li>
-              <a rel="noopener noreferrer" href="#" className="hover:underline">
-                Headline Berita Lain
-              </a>
+            <li className="hover:underline">
+              <Link href="/detail">Headline Berita Lain</Link>
             </li>
-            <li>
-              <a rel="noopener noreferrer" href="#" className="hover:underline">
-                Headline Berita Lain
-              </a>
+            <li className="hover:underline">
+              <Link href="/detail">Headline Berita Lain</Link>
             </li>
-            <li>
-              <a rel="noopener noreferrer" href="#" className="hover:underline">
-                Headline Berita Lain
-              </a>
+            <li className="hover:underline">
+              <Link href="/detail">Headline Berita Lain</Link>
             </li>
           </ul>
         </div>
