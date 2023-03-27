@@ -1,27 +1,31 @@
 import Link from "next/link";
 
-const Card = () => {
+const Card = ({product}) => {
+  console.log(product)
   return (
-    <Link href="/detail">
-      <div className="p-12">
-        <div className="max-w-xs p-6 rounded-md shadow-md bg-gray-900 text-gray-50">
+    
+      <div className="relative">
+        <div className="max-w-lg  rounded-md shadow-black-200 shadow-lg  text-black-50 mx-auto overflow-hidden  ">
+        <Link href={`/products/${product.id}`}>
           <img
-            src="images/berita.jpg"
+            src={product.thumbnail}
             alt=""
-            className="object-cover object-center w-full rounded-md h-72 bg-gray-500"
+            className="object object-center h-72 bg-gray-500"
           />
-          <div className="mt-6 mb-2">
-            <span className="block text-xs font-medium tracking-widest uppercase text-violet-400">
-              (Category)
+          <div className="absolute inset-0 flex flex-col justify-end p-5">
+            <span className="block text-xs font-medium tracking-widest uppercase text-white">
+              {product.category}
             </span>
-            <h2 className="text-xl font-semibold tracking-wide">
-              (Headline Berita)
+            <h2 className="text-xl font-semibold tracking-wide truncate line-3 text-white">
+              {product.title}
             </h2>
+          
+            <p className="text-white">{product.pubDate}</p>
           </div>
-          <p className="text-gray-100">(tgl rilis berita)</p>
+          </Link>
         </div>
       </div>
-    </Link>
+    
   );
 };
 

@@ -1,8 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import logoDark from "../public/images/cute.png";
+import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
+import data from '../public/data/data.json'
 
-const Header = () => {
+
+function Header  ()  {
+  // const router = useRouter();
+  // const handleCategory = (category) => {
+  //   router.push('/category/${category')
+  // const categories = [...new Set(data.map((product) => product.category))]
+  const router = useRouter();
+  const handleCategoryClick = (category) => {
+    router.push(`/category/${category}`);
+  };
+
+
   return (
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 bg-white z-50 px-4 ">
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">
@@ -12,30 +26,60 @@ const Header = () => {
           </div>
         </Link>
         <div>
-          <ul className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
-            <li className="headerLi">
+          <ul className="hidden lg:inline-flex gap-8  text-sm font-semibold">
+            <li className="">
             <Link href="/" >Home</Link>
             </li>
-            <li className="headerLi">
-            <Link href="/news" >Style</Link>
+            
+            <li className="">
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("style")}
+                >
+                  Style
+                </button>
+            </li>
+
+            <li className="">
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("travel")}
+                >
+                  Travel
+                </button>
             </li>
             <li className="headerLi">
-            <Link href="/news" >Travel</Link>
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("sport")}
+                >
+                  Sports
+                </button>
+            </li>
+            
+            <li className="headerLi">
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("health")}
+                >
+                  Health
+                </button>
             </li>
             <li className="headerLi">
-            <Link href="/news" >Sports</Link>
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("entertainment")}
+                >
+                  Entertainment
+                </button>
             </li>
             <li className="headerLi">
-            <Link href="/news" >Film & Music</Link>
-            </li>
-            <li className="headerLi">
-            <Link href="/news" >Health</Link>
-            </li>
-            <li className="headerLi">
-            <Link href="/news" >Entertainment</Link>
-            </li>
-            <li className="headerLi">
-            <Link href="/news" >Politic</Link>
+            <button
+                  className="nav"
+                  onClick={() => handleCategoryClick("politik")}
+                >
+                  Politic
+                </button>
             </li>
           </ul>
         </div>
@@ -58,12 +102,12 @@ const Header = () => {
                 </svg>
               </button>
             </span>
-            <input
+            {/* <input
               type="search"
               name="Search"
               placeholder="Search..."
               className="w-30 py-2 pl-8 pr-2 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-800 text-gray-100"
-            />
+            /> */}
           </div>
           <button className="uppercase text-sm border-[1px] border-black hover:border-secondaryColor px-4 py-1 font-semibold hover:text-violet-800 rounded-md hover:bg-secondaryColor transition-all duration-300 active:bg-violet-400">
             Sign In
@@ -73,6 +117,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+          }
 
 export default Header;

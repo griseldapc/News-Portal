@@ -127,7 +127,7 @@ const Display = () => {
       </div>
 
       <div className="text-4xl ml-10 mt-14 font-bold leading-none sm:text-4xl">
-        Technology
+        Style
         <a
           rel="noopener noreferrer"
           href="/news"
@@ -266,7 +266,7 @@ const Display = () => {
       </div>
 
       <div className="text-4xl ml-10 mt-14 font-bold leading-none sm:text-4xl">
-        Technology
+        Travel
         <a
           rel="noopener noreferrer"
           href="/news"
