@@ -34,7 +34,7 @@ function Header  ()  {
             <li className="">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("style")}
+                  onClick={() => handleCategoryClick("Style")}
                 >
                   Style
                 </button>
@@ -43,7 +43,7 @@ function Header  ()  {
             <li className="">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("travel")}
+                  onClick={() => handleCategoryClick("Travel")}
                 >
                   Travel
                 </button>
@@ -51,7 +51,7 @@ function Header  ()  {
             <li className="headerLi">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("sport")}
+                  onClick={() => handleCategoryClick("Sports")}
                 >
                   Sports
                 </button>
@@ -60,7 +60,7 @@ function Header  ()  {
             <li className="headerLi">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("health")}
+                  onClick={() => handleCategoryClick("Health")}
                 >
                   Health
                 </button>
@@ -68,7 +68,7 @@ function Header  ()  {
             <li className="headerLi">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("entertainment")}
+                  onClick={() => handleCategoryClick("Entertainment")}
                 >
                   Entertainment
                 </button>
@@ -76,7 +76,7 @@ function Header  ()  {
             <li className="headerLi">
             <button
                   className="nav"
-                  onClick={() => handleCategoryClick("politik")}
+                  onClick={() => handleCategoryClick("Politik")}
                 >
                   Politic
                 </button>
