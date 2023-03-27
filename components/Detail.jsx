@@ -29,13 +29,9 @@ const Detail = () => {
       </article>
       <div>
         <div className="flex flex-wrap py-6 space-x-2 border-t border-dashed border-gray-400">
-          <a
-            rel="noopener noreferrer"
-            href="#"
-            className="px-3 py-1 rounded-sm hover:underline bg-violet-400 dark:text-gray-900"
-          >
-            Category
-          </a>
+          <div className="px-3 py-1 rounded-sm hover:underline bg-violet-400 dark:text-gray-900">
+            <Link href="/news">Travel</Link>
+          </div>
         </div>
         <div className="space-y-2">
           <h4 className="text-lg font-semibold">Related posts</h4>
