@@ -1,6 +1,6 @@
 const Detail = () => {
   return (
-    <div className="max-w-2xl px-6 py-16 mx-auto space-y-12">
+    <div className="max-w-5xl px-6 py-16 mx-auto space-y-12">
       <article className="space-y-8 text-black">
         <div className="space-y-6">
           <h1 className="text-4xl font-bold md:tracking-tight md:text-5xl">
