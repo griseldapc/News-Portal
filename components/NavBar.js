@@ -13,14 +13,30 @@ const Header = () => {
         </Link>
         <div>
           <ul className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
-            <li className="headerLi">Home</li>
-            <li className="headerLi">Style</li>
-            <li className="headerLi">Travel</li>
-            <li className="headerLi">Sports</li>
-            <li className="headerLi">Film & Music</li>
-            <li className="headerLi">Health</li>
-            <li className="headerLi">Entertainment</li>
-            <li className="headerLi">Politic</li>
+            <li className="headerLi">
+            <Link href="/" >Home</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Style</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Travel</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Sports</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Film & Music</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Health</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Entertainment</Link>
+            </li>
+            <li className="headerLi">
+            <Link href="/news" >Politic</Link>
+            </li>
           </ul>
         </div>
         <div className="flex items-center gap-8 text-lg">
