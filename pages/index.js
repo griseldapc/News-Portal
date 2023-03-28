@@ -27,7 +27,7 @@ export default function Home() {
           <h3>Suplemen Protein untuk Anda yang sedang Bulking</h3>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4  px-3 py-3">
+      <div className="grid lg:grid-cols-3 gap-6 px-3 py-3">
         {data.map((product) => {
           return <Card key={product.id} product={product} />;
         })}
