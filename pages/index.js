@@ -9,8 +9,8 @@ export default function Home() {
   );
 
   return (
-    <div>
-      <div className="w-full  p-5 flex gap-5">
+    <div className="sm:px-8 md:px-16 lg:px-24 xl:px-32">
+      <div className="w-full p-5 flex flex-col md:flex-row gap-5">
         {filteredProducts.map((product) => (
           <MainCard key={product.id} product={product} />
         ))}
