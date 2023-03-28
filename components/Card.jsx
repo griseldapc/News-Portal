@@ -16,7 +16,7 @@ const Card = ({ product}) => {
             style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
           >
             <div class="absolute top-0 left-0 m-6">
-              <span class="text-white bg-blue-500 rounded-full px-4 py-2 text-xs font-bold">
+              <span class="text-white bg-violet-400 rounded-full px-4 py-2 text-xs font-bold">
                 {product.category}
               </span>
             </div>
