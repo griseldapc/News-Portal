@@ -1,6 +1,7 @@
 import React from 'react'
 import data from "../../public/data/data.json"
 import Link from "next/link"
+import Contact  from '../../components/Contact';
 
 function Detail({ product }) {
     // Find related posts
@@ -28,9 +29,9 @@ function Detail({ product }) {
                         </div>
                     </div>
                     <img src={product.thumbnail} className="w-full" />
-                    <div className="text-black">
+                    <div className="text-black text-left">
                         {product.article.slice(0, 4).map((paragraph, index) => (
-                            <p className="mb-5 indent-5" key={index}>
+                            <p className="mb-5 indent-5 text-left" key={index}>
                                 {paragraph}
                             </p>
                         ))}
@@ -38,9 +39,9 @@ function Detail({ product }) {
                     {product.addons && (
                         <img src={product.addons} alt={product.title} className="w-full"/>
                     )}
-                    <div className="text-black">
+                    <div className="text-black text-left">
                         {product.article.slice(4).map((paragraph, index) => (
-                            <p className="mb-5 indent-5" key={index}>
+                            <p className="mb-5 indent-5 text-left" key={index}>
                                 {paragraph}
                             </p>
                         ))}
@@ -65,6 +66,7 @@ function Detail({ product }) {
                         </ul>
                     </div>
                 </div>
+                <Contact />
             </div>
         </div>
     )
