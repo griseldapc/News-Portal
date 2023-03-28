@@ -1,9 +1,8 @@
-// import Display from "../components/Display";
+
 import data from "../public/data/data.json"
 import Card from "../components/Card"
 import MainCard from "../components/MainCard"
 import Link from "next/link"
-import { list } from "postcss";
 export default function Home() {
 
 
