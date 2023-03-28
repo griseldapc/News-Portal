@@ -1,31 +1,40 @@
 import Link from "next/link";
 
-const Card = ({product}) => {
-  console.log(product)
+const Card = ({ product }) => {
+  console.log(product);
   return (
-    
-      <div className="relative">
-        <div className="max-w-lg  rounded-md shadow-black-200 shadow-lg  text-black-50 mx-auto overflow-hidden  ">
-        <Link href={`/products/${product.id}`}>
-          <img
-            src={product.thumbnail}
-            alt=""
-            className="object object-center h-72 bg-gray-500"
-          />
-          <div className="absolute inset-0 flex flex-col justify-end p-5">
-            <span className="block text-xs font-medium tracking-widest uppercase text-white">
-              {product.category}
-            </span>
-            <h2 className="text-xl font-semibold tracking-wide truncate line-3 text-white">
-              {product.title}
-            </h2>
-          
-            <p className="text-white">{product.pubDate}</p>
+    <>
+      <div
+        class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg"
+        style={{ backgroundPosition: "50%;" }}
+        data-mdb-ripple="true"
+        data-mdb-ripple-color="light"
+      >
+        <img src={product.thumbnail} class="w-full" />
+        <Link href={`/products/${product.id}`} key={product.id}>
+          <div
+            class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style={{ backgroundColor: "rgba(0, 0, 0, 0.4)" }}
+          >
+            <div class="absolute top-0 left-0 m-6">
+              <span class="text-white bg-blue-500 rounded-full px-4 py-2 text-xs font-bold">
+                {product.category}
+              </span>
+            </div>
+            <div class="flex justify-start items-end h-full">
+              <div class="text-white m-6">
+                <h5 class="font-bold text-lg mb-3">{product.title}</h5>
+                <p>
+                  <small>
+                    Published <u>{product.pubDate}</u> by {product.author}
+                  </small>
+                </p>
+              </div>
+            </div>
           </div>
-          </Link>
-        </div>
+        </Link>
       </div>
-    
+    </>
   );
 };
 
