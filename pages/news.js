@@ -3,10 +3,7 @@ import Card from '../components/Card';
 
 const News = () => {
   return (
-    <div>
-     
-        <Card/>
-    </div>
+    <></>
   )
 }
 
