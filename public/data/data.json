@@ -409,7 +409,7 @@
         "type": "best"
     },
     {
-        "id": "20",
+        "id": 20,
         "link": "https://www.suara.com/entertainment/2023/03/20/130456/manggung-di-indonesia-penyelenggara-sebut-biaya-undang-slipknot-setara-beli-400-mobil-avanza",
         "title": "Manggung di Indonesia, Penyelenggara Sebut Biaya Undang Slipknot Setara Beli 400 Mobil Avanza",
         "pubDate": "2023-03-20",
@@ -434,7 +434,7 @@
         "author":"Shevinna"
     },
     {
-        "id": "21",
+        "id": 21,
         "link": "https://www.suara.com/entertainment/2023/03/26/183000/tiket-fan-meeting-wayv-dijual-mulai-29-maret-harga-termahal-nggak-sampai-rp-3-juta",
         "title": "Tiket Fan Meeting WayV Dijual Mulai 29 Maret, Harga Termahal Nggak Sampai Rp 3 Juta",
         "pubDate": "2023-03-26",

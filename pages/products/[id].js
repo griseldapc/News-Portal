@@ -1,7 +1,6 @@
 import React from 'react'
 import data from "../../public/data/data.json"
 import Link from "next/link"
-import Contact  from '../../components/Contact';
 
 function Detail({ product }) {
     // Find related posts
@@ -66,7 +65,6 @@ function Detail({ product }) {
                         </ul>
                     </div>
                 </div>
-                <Contact />
             </div>
         </div>
     )

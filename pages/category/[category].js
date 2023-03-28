@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import NavBar from "../../components/NavBar";
 import data from "../../public/data/data.json";
 import Card from "../../components/Card";
 
@@ -20,6 +19,7 @@ const CategoryPage = () => {
   useEffect(() => {
     filteredData()
   }, [category])
+  
   console.log(filters);
   return (
     <div className="grid lg:grid-cols-3 gap-6 px-3 py-3">

@@ -1,8 +1,6 @@
 import Link from "next/link";
 
 const Card = ({product}) => {
-    
-  console.log(product)
   return (
     
       <div className="relative ">
