@@ -1,6 +1,6 @@
 # Berita Kosong by Group 3
 
-## Visit Deployment Link : 
+## Visit Deployment Link :  https://news-portal-kelompok3-2z3xm44fe-griseldapc.vercel.app/
 
 ## Getting Started ( Local )
 
