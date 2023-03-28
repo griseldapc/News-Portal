@@ -1,4 +1,4 @@
-import Display from "../components/Display";
+// import Display from "../components/Display";
 import data from "../public/data/data.json"
 import Card from "../components/Card"
 import MainCard from "../components/MainCard"
@@ -15,13 +15,14 @@ export default function Home() {
     <div>
       <div className="w-full  p-5 flex gap-5">
       {filteredProducts.map((product) => (
-        <MainCard key={product.id} product={product} />
+        // console.log(product.id),
+        <MainCard key={product.id}  product={product} />
       ))}
 
       <div className="mx-3 max-w-1/4">
         {sameCategoryProducts.map((product) => {
           return (
-            <li className="hover:underline my-4">
+            <li className="hover:underline my-4" key={product.id} >
               <Link href={`/products/${product.id}`}>{product.title}</Link>
             </li>
           )
@@ -32,7 +33,7 @@ export default function Home() {
     </div>
       <div className="grid grid-cols-3 gap-4  px-3 py-3">
        {data.map((product) => {
-        
+        // console.log(product.id);
         return (
       <Card key={product.id} product={product} />
     )})}

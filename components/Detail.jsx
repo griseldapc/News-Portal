@@ -1,3 +1,4 @@
+import Link from "next/link";
 const Detail = () => {
   return (
     <div className="max-w-5xl px-6 py-16 mx-auto space-y-12">
