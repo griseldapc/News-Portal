@@ -1,7 +1,7 @@
 import React from 'react'
 import data from "../../public/data/data.json"
 import Link from "next/link"
-import Contact  from '../../components/Contact';
+import Contact  from '../../components/contact';
 
 function Detail({ product }) {
     // Find related posts
