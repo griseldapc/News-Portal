@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import NavBar from "../../components/NavBar";
-// import Footer from "../components/Footer";
 import data from "../../public/data/data.json";
 import Card from "../../components/Card";
 

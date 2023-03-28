@@ -3,7 +3,7 @@ import Link from "next/link";
 import logoDark from "../public/images/cute.png";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
-import data from '../public/data/data.json'
+
 
 
 function Header  ()  {
