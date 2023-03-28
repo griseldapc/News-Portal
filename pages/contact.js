@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='max-w-[1240px] m-auto p-4 h-screen flex justify-center'>
 
         <form className='max-w-[600px] '>
-        <h1 className="text-2xl font-bold text-left p-4 flex justify-center"  >Let's join us</h1>
+        <h1 className="text-2xl font-bold text-left p-4 flex justify-center"  >Let&apos;s join us</h1>
             <div className='grid grid-cols-2 gap-2 '>
                 <input className='border shadow-lg p-3 bg-gray-900 rounded-xl text-white' type="text" placeholder='Name' />
                 <input className='border shadow-lg p-3 bg-gray-900 rounded-xl ' type="email" placeholder='Email' />
