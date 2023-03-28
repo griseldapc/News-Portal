@@ -32,9 +32,9 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-3 gap-4  px-3 py-3">
         {data.map((product) => {
-
-          <Card key={product.id} product={product} />
-
+          return (
+            <Card key={product.id} product={product} />
+          )
         })}
       </div>
     </div>
